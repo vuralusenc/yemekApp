@@ -1,0 +1,10 @@
+<ion-view view-title="Etli Yemek" >
+  <ion-content > 
+    <ion-list >
+      <ion-item ng-repeat="ana in yemekler" href="#/app/etliyemek/{{ana.id}}">
+        <img ng-src="{{ana.resim}}" style="height: 5%;width:5%;padding-right:4px">	
+        {{ana.adi}}  
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

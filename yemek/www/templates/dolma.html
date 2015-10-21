@@ -1,0 +1,10 @@
+<ion-view view-title="Dolma" style="color:red" >
+  <ion-content > 
+    <ion-list >
+      <ion-item ng-repeat="ana in yemekler" href="#/app/dolma/{{ana.id}}">
+        <img src="{{ana.resim}}" style="height: 5%;width:5%;"> 	
+        {{ana.adi}}  
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

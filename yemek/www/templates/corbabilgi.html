@@ -1,0 +1,14 @@
+<ion-view view-title="Playlists" >
+  <ion-content>
+	 <h2>{{yemek.adi}}</h2>
+	  <div class="list card">
+	 	<img ng-src="{{yemek.resim}}" style="height:100%;width: 100%;">
+	 	<h2 style="color:#f39c12">Malzemeler</h2>
+	 	<div ng-repeat="y in yemek.malzemeler">{{y}}</div>
+	 	<h2 style="color:#f39c12">Yapılışı</h2>
+	 	 <p>{{yemek.yapilisi}}</p>
+     <div class="ion-android-contact" style="size:100px"> {{yemek.kisi}}</div>
+     <div class="ion-android-stopwatch"> {{yemek.pisirme}}</div>  	
+	 </div>
+  </ion-content>
+</ion-view>

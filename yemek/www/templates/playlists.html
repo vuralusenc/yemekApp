@@ -1,0 +1,10 @@
+<ion-view view-title="Hamur İşleri">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        <img ng-src="{{playlist.resim}}" style="  height: 5%;width: 5%;">
+        {{playlist.title}} 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
